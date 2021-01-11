@@ -1,0 +1,56 @@
+html{
+    margin: 0px;padding: 0px;
+}
+.Left{
+    background-image: url("../Image/twitter1.png");
+    background-size: 500%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 50%;
+    border-right: brown 4px solid;
+    margin: 0px;padding: 0px;
+}
+.Right{
+    height: auto;
+    width: 50%;
+    border-left: chartreuse 4px solid;
+    margin: 0px;padding: 0px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+    margin: 8px;
+}
+a:hover{
+    text-decoration: none;
+    text-decoration-color: none;
+}
+.Pied{
+    width: 100%;
+    background-color: rgb(5, 12, 77);
+    padding: 0px;
+    margin: auto;
+}
+@media screen and (max-width: 1200px){
+    .Left{
+        float: left;
+
+    }
+    .Right{
+        float: right;
+    }
+}
+@media screen and (max-width: 768px){
+    .Left{
+        float: right;
+
+    }
+    .Right{
+        float: left;
+    }
+}
