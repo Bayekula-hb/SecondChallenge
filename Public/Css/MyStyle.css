@@ -1,10 +1,10 @@
 html{
     margin: 0px;padding: 0px;
 }
-.Left, .Right{
+#Left, #Right{
     padding: 0px;margin: 0px;
 }
-.Left{
+#Left{
     background-image: url("../Image/twitter1.png");
     background-size: 150%;
     background-repeat: no-repeat;
@@ -14,12 +14,15 @@ html{
     height: 763px;
     width: 50%;
     margin: auto;padding: 0px;
+    float: left;
 }
-.Right{
+#Right{
     height: auto;
     width: 50%;
-    border-left: chartreuse 4px solid;
     margin: 0px;padding: 0px;
+    background-color: rgb(5, 12, 77);
+    color: white;
+    float: right;
 }
 ul li{
     list-style: none;
@@ -51,34 +54,42 @@ a:hover{
     color: white;
     font-size: 1.5em;
 }
+.Btn1{
+    background-color: rgb(5, 12, 207);
+}
+.Btn1, .Btn2{
+    border-radius: 20px;
+    margin: 10px;
+    width:  50%;
+    border: none;
+}
 .DivCenter{
-
+    padding: 0px;
+    margin-left: 25%;
+}
+img{
+    height: 55px;
+    width: 55px;
 }
 #LogoTwitter{
-    image-orientation: flip;
-    image-resolution: 20px;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-bottom: 10%;
 }
 .Pied{
     width: 100%;
     background-color: rgb(5, 12, 77);
-    padding: 0px;
+    padding: 5px;
     margin: auto;
 }
 @media screen and (max-width: 1200px){
-    .Left{
-        float: left;
-
-    }
-    .Right{
-        float: right;
-    }
 }
 @media screen and (max-width: 768px){
+    .Right{
+        float: left;
+    }
     .Left{
         float: right;
 
-    }
-    .Right{
-        float: left;
     }
 }
